@@ -1,0 +1,35 @@
+
+body {
+    
+    font-family: 'Poppins', 'sans serif';
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+div {
+    margin-top: 100px;
+}
+
+.logo {
+    width: 70vw;
+    margin-top: 100spx;
+    
+}
+
+.btns {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 15px;
+    border: 2 px solid red;
+    padding: 5px 20px;
+    text-decoration: none;
+    box-shadow: 2px 3p 5px lightgray;
+}
+.btn:hover {
+    background-color: dodgerblue;
+
+}

@@ -1,0 +1,47 @@
+
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-family:Georgia;
+}
+
+.section1 {
+    flex-direction: column;
+    flex:1;
+    display: flex;
+    margin: 30px auto;
+    text-align: center;
+    justify-content:space-around;
+
+
+}
+
+.section2 {
+    flex-direction: column;
+    flex:2;
+    display: flex;
+    margin: 30px auto;
+    text-align: center;
+    justify-content:space-around;
+    
+    
+}
+
+img{
+    height:200px ;
+    width: 200px;
+}
+.titre{
+    border-bottom: 10px double black;
+}
+
+h3{
+    background-color: rgb(80, 63, 233);
+    color:aliceblue
+}
