@@ -53,9 +53,6 @@
                     <li class="Leçons">
                         <a class="nav-link" href="Leçons.html">Leçons</a>
                     </li>
-                    <li class="Quizz">
-                        <a class="nav-link" href="Quizz.html">Quizz</a>
-                    </li>
                     <li class="Mur">
                         <a class="nav-link" href="Mur.html">Mur collaboratif</a>
                     </li>
@@ -75,19 +72,11 @@
 
 </header>
 <body>
-    <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-        <a href="#" class="google"><i class="fa fa-google"></i></a> 
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
-      </div>
-    
+   
     <div class="div17">
-        
-        
+    
         <div>
-            <form class="div18" action="/action_page.php" method="post" autocomplete="on">
+            <form class="div18" action="/abonner.php" method="post" autocomplete="on">
                 <h2 class="tit">Nom d'utilisateur</h2>
                 <label for="Pseudo">Pseudo</label><br>
                 <input type="text"  id="Pseudo" name="Pseudo"><br>
@@ -108,25 +97,25 @@
                 <input type="email" id="Mail" name="email" required><br>
             </form> 
 
-            <form class="div19" action="/action_page.php" method="post" autocomplete="on">
+            <form class="div19" action="/abonner.php" method="post" autocomplete="on">
                 <h2 class="tit">Coordonnées de facturation si différent</h2>
-                <label for="Pseudo">Raison sociale</label><br>
-                <input type="text"  id="Raison_social" name="Pseudo"><br>
+                <label for="raison_social">Raison sociale</label><br>
+                <input type="text"  id="raison_social" name="raison_social"><br>
 
-                <label for="name">Nom</label><br>
-                <input type="text" id="Nom_facturation" name="lname" required><br>
+                <label for="nom_facturation">Nom</label><br>
+                <input type="text" id="nom_facturation" name="nom_facturation" ><br>
 
-                <label for="surname">Prénom</label><br>
-                <input type="text" id="Prénom_facturation" name="sname" required><br>
+                <label for="prénom_facturation">Prénom</label><br>
+                <input type="text" id="prénom_facturation" name="prénom_facturation" ><br>
 
-                <label for="address">Addresse</label><br>
-                <input type="text" id="Addresse_facturation" name="sname" required><br>
+                <label for="addresse_facturation">Addresse</label><br>
+                <input type="text" id="addresse_facturation" name="addresse_facturation" ><br>
 
-                <label for="phone">Numéro de téléphone</label><br>
-                <input type="tel" id="Tèl_facturation" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+                <label for="tel_facturation">Numéro de téléphone</label><br>
+                <input type="tel" id="tel_facturation" name="tel_facturation" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
 
-                <label for="email">Email</label><br>
-                <input type="email" id="Mail_facturation" name="email" required><br>
+                <label for="mail_facturation">Email</label><br>
+                <input type="email" id="Mail_facturation" name="mail_facturation" ><br>
             </form> 
         </div>
     </div>
@@ -151,34 +140,50 @@
         </form>
         
     </div></div>
+    <div class="div17">
         
     <div class="div27">
         <form>
             
             <div class="div24">
-                <input type="checkbox" id="1" name="CB" value="CB">
-                <label for="CB" id="CB">CB</label><br>
-            </div>
-            <div class="div24">
-                <input type="checkbox" id="2" name="Paypal" value="Paypal">
-                <label for="Paypal" id="PAYPAL">Paypal</label><br>
+                <input type="checkbox" id="1" name="CB" value="CB" >
+                <label for="CB" id="CB">CB*</label><br>
             </div>
             <div class="div25">
-                <label for="cname">Nom du propriétaire</label><br>
-                <input  type="text" id="Nom_prop" name="cardname" placeholder="Nom du propriétaire"><br>
-                <label for="ccnum">numéro de la carte</label><br>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br>
-                <label for="expmonth">Mois d'expiration</label><br>
-                <input type="text" id="expmonth" name="expmonth" placeholder="Mois"><br>
-                <label for="expyear">Année d'expiration</label><br>
-                <input type="text" id="expyear" name="expyear" placeholder="2024"><br>
-                <label for="cvv">CVV</label><br>
-                <input type="text" id="cvv" name="cvv" placeholder="352"><br>
-                </div>
-            </div>
-        </form>
-        <button class="connecter" type="button" style="width: 50%;">Se connecter</button>
-        </div>
+                <label for="cname">Nom du propriétaire*</label><br>
+                <input  type="text" id="Nom_prop" name="cardname" placeholder="Nom du propriétaire" required><br>
+                <label for="ccnum">numéro de la carte*</label><br>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required><br>
+                <label for="expmonth">Mois d'expiration*</label><br>
+                <input type="text" id="expmonth" name="expmonth" placeholder="Mois" required><br>
+                <label for="expyear">Année d'expiration*</label><br>
+                <input type="text" id="expyear" name="expyear" placeholder="2024" required><br>
+                <label for="cvv">CVV*</label><br>
+                <input type="text" id="cvv" name="cvv" placeholder="352" required><br>
 
+                <button class="btn btn-primary" type="submit" style="width: 100%;margin-top: 3%;">S'enregistrer</button>
+                
+
+                
+            </div>
+            
+        </form>
+        
+        </div>
+       
+        </div>
+        
 
 </body>
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary" _msttexthash="111306" _msthash="14">Acceuil</a></li>
+      <li class="nav-item"><a href="Leçons.html" class="nav-link px-2 text-body-secondary" _msttexthash="326092" _msthash="15">Leçons</a></li>
+      <li class="nav-item"><a href="Mur.html" class="nav-link px-2 text-body-secondary" _msttexthash="363909" _msthash="17">Mur</a></li>
+      <li class="nav-item"><a href="point.html" class="nav-link px-2 text-body-secondary" _msttexthash="97383" _msthash="18">Point</a></li>
+      <li class="nav-item"><a href="cadeau.html" class="nav-link px-2 text-body-secondary" _msttexthash="111306" _msthash="14">cadeaux</a></li>
+      <li class="nav-item"><a href="Profil.html" class="nav-link px-2 text-body-secondary" _msttexthash="326092" _msthash="15">Profil</a></li>
+      <li class="nav-item"><a href="abonner.html" class="nav-link px-2 text-body-secondary" _msttexthash="95446" _msthash="16">abonner</a></li>      
+    </ul>
+    <p class="text-center text-body-secondary" _msttexthash="327002" _msthash="19">© 2023 Société, Inc</p>
+  </footer>

@@ -1,0 +1,140 @@
+ .{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+body{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    margin-top: 20%;
+
+}
+.container{
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    width: 768px;
+    max-width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+}
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+}
+.sign-of-container{
+    left: 0;
+    width: 50%;
+
+
+}
+.login-container{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+form{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+
+
+}
+input{
+    background-color: aquamarine;
+    border: none;
+    padding: 12 15px;
+    margin: 18 0px;
+    width: 100%;
+}
+button{
+    background-color: aquamarine;
+    color: black;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 16 32px;
+    margin-top: 24px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border-color:  black;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(1, 1, 49);
+    color: aquamarine;
+
+}
+h1{
+    margin: 0;
+    font-size: 24px;
+
+}
+.{
+   text-decoration: none; 
+   font-size: 14px;
+   margin: 8 20px;
+   color: black;
+
+
+}
+.everly-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+
+}
+.everly{
+    background: linear-gradient(right, rgb(247, 244, 244), rgb(207, 220, 245));
+    background: aquamarine;
+    color: black;
+    position: relative;
+    left: 1%;
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    
+}
+
+.everly-panel{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+}
+
+.everly-left{
+transform: translateX(-20%);
+}
+.everly-right{
+    right: 0;
+    transform: translateX(0);
+}
